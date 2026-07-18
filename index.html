@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Haider Ali — Website Developer &amp; UI/UX Designer</title>
+<meta name="description" content="Haider Ali is a website developer, UI/UX designer and AI &amp; ML learner based in KP, Khanpur. Explore projects, skills and certificates.">
+<meta name="theme-color" content="#07131F">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Haider Ali — Website Developer & UI/UX Designer">
+<meta property="og:description" content="Portfolio of Haider Ali — websites, UI/UX design, and AI/ML learning projects.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/images/og-cover.svg">
+<meta property="og:url" content="https://example.com/">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Haider Ali — Website Developer & UI/UX Designer">
+<meta name="twitter:description" content="Portfolio of Haider Ali — websites, UI/UX design, and AI/ML learning projects.">
+<meta name="twitter:image" content="assets/images/og-cover.svg">
+
+<link rel="icon" type="image/svg+xml" href="favicon/favicon.svg">
+<link rel="canonical" href="https://example.com/">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Haider Ali",
+  "jobTitle": "Website Developer & UI/UX Designer",
+  "address": {
+    "@type": "PostalAddress",
+    "addressRegion": "KP",
+    "addressLocality": "Khanpur",
+    "addressCountry": "PK"
+  },
+  "sameAs": ["https://instagram.com/haider123"],
+  "knowsAbout": ["Web Development", "UI/UX Design", "Machine Learning", "Video Editing"]
+}
+</script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<div id="cursor-glow" aria-hidden="true"></div>
+
+<canvas id="particle-canvas" aria-hidden="true"></canvas>
+
+<!-- ============ NAVIGATION ============ -->
+<header class="nav-wrap">
+  <nav class="nav" aria-label="Primary">
+    <a href="#home" class="nav-logo" aria-label="Haider Ali — home">HA</a>
+
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <ul class="nav-menu" id="navMenu">
+      <li><a href="#home" class="nav-link" data-section="home">Home</a></li>
+      <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+      <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+      <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+      <li><a href="#certificates" class="nav-link" data-section="certificates">Certificates</a></li>
+      <li><a href="#contact" class="nav-link nav-cta" data-section="contact">Contact</a></li>
+
+      <li>
+        <button
+          id="themeToggle"
+          class="theme-toggle"
+          type="button"
+          aria-label="Toggle dark/light theme"
+          aria-pressed="false"
+        >
+          <span class="theme-toggle-icon" aria-hidden="true">🌙</span>
+          <span class="theme-toggle-text">Theme</span>
+        </button>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section id="home" class="section hero" aria-label="Introduction">
+    <div class="container hero-grid">
+      <div class="hero-copy" data-reveal>
+        <p class="eyebrow">Hello, I'm</p>
+        <h1 class="hero-title">Haider Ali</h1>
+        <p class="hero-role">
+          <span id="typedRole" aria-live="polite">Website Developer</span><span class="cursor-blink" aria-hidden="true">|</span>
+        </p>
+        <p class="hero-desc">
+          DIT student from KP, Khanpur, building clean, usable interfaces and learning
+          how AI reshapes the way we design and build for the web.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="assets/Haider-Ali-CV.pdf" class="btn btn-ghost" download>Download CV</a>
+        </div>
+        <ul class="hero-meta" aria-label="Quick facts">
+          <li>📍 KP, Khanpur</li>
+          <li>🎓 FSc ICS · DIT Student</li>
+          <li>💬 Open for internships</li>
+        </ul>
+      </div>
+
+      <div class="hero-visual" data-reveal aria-hidden="true">
+        <div class="avatar-ring">
+          <svg viewBox="0 0 240 240" class="avatar-svg" role="img" aria-label="Abstract illustration representing Haider Ali">
+            <defs>
+              <linearGradient id="avatarGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#5B8DEF"/>
+                <stop offset="100%" stop-color="#6DD3CE"/>
+              </linearGradient>
+            </defs>
+            <circle cx="120" cy="120" r="96" fill="url(#avatarGrad)" opacity="0.15"/>
+            <circle cx="120" cy="120" r="70" fill="none" stroke="url(#avatarGrad)" stroke-width="1.5" opacity="0.5"/>
+            <path d="M120 60 L150 100 L120 140 L90 100 Z" fill="none" stroke="#B8E1FF" stroke-width="1.5" opacity="0.6"/>
+            <circle cx="120" cy="120" r="6" fill="#B8E1FF"/>
+            <circle cx="70" cy="80" r="3" fill="#6DD3CE"/>
+            <circle cx="175" cy="150" r="3" fill="#5B8DEF"/>
+            <circle cx="60" cy="170" r="2.5" fill="#B8E1FF"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <a href="#about" class="scroll-cue" aria-label="Scroll to About section">
+      <span></span>
+    </a>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section id="about" class="section" aria-labelledby="about-title">
+    <div class="container">
+      <p class="eyebrow" data-reveal>About</p>
+      <h2 id="about-title" class="section-title" data-reveal>A developer and designer who likes solving real problems</h2>
+
+      <div class="about-grid">
+        <p class="about-lead" data-reveal>
+          I'm Haider Ali, a DIT student who enjoys turning ideas into interfaces people
+          actually enjoy using. I work across web development and UI/UX design, and I'm
+          steadily building my footing in AI &amp; machine learning — treating every project
+          as a chance to learn something new.
+        </p>
+
+        <ul class="about-facts" data-reveal>
+          <li>
+            <span class="fact-label">Education</span>
+            <span class="fact-value">FSc in ICS</span>
+          </li>
+          <li>
+            <span class="fact-label">Currently studying</span>
+            <span class="fact-value">DIT (Diploma in Information Technology)</span>
+          </li>
+          <li>
+            <span class="fact-label">Location</span>
+            <span class="fact-value">KP, Khanpur</span>
+          </li>
+          <li>
+            <span class="fact-label">Focus</span>
+            <span class="fact-value">Web Development · UI/UX · AI/ML</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="about-traits" data-reveal>
+        <span class="trait">Passionate developer</span>
+        <span class="trait">Creative designer</span>
+        <span class="trait">Problem solver</span>
+        <span class="trait">Continuous learner</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section id="skills" class="section" aria-labelledby="skills-title">
+    <div class="container">
+      <p class="eyebrow" data-reveal>Skills</p>
+      <h2 id="skills-title" class="section-title" data-reveal>What I work with</h2>
+      <p class="section-sub" data-reveal>Grouped by discipline, so it's easy to scan.</p>
+
+      <div class="skills-grid">
+
+        <article class="skill-card" data-reveal tabindex="0">
+          <h3 class="skill-card-title">Website Development</h3>
+          <ul class="skill-bars">
+            <li><span class="skill-name">HTML &amp; CSS</span><span class="bar"><span class="bar-fill" style="--val:92%"></span></span></li>
+            <li><span class="skill-name">JavaScript</span><span class="bar"><span class="bar-fill" style="--val:80%"></span></span></li>
+            <li><span class="skill-name">Responsive Design</span><span class="bar"><span class="bar-fill" style="--val:88%"></span></span></li>
+            <li><span class="skill-name">Landing Pages</span><span class="bar"><span class="bar-fill" style="--val:85%"></span></span></li>
+          </ul>
+        </article>
+
+        <article class="skill-card" data-reveal tabindex="0">
+          <h3 class="skill-card-title">UI / UX Design</h3>
+          <ul class="skill-bars">
+            <li><span class="skill-name">Wireframing</span><span class="bar"><span class="bar-fill" style="--val:82%"></span></span></li>
+            <li><span class="skill-name">Figma</span><span class="bar"><span class="bar-fill" style="--val:78%"></span></span></li>
+            <li><span class="skill-name">User Research</span><span class="bar"><span class="bar-fill" style="--val:70%"></span></span></li>
+            <li><span class="skill-name">Design Thinking</span><span class="bar"><span class="bar-fill" style="--val:80%"></span></span></li>
+          </ul>
+        </article>
+
+        <article class="skill-card" data-reveal tabindex="0">
+          <h3 class="skill-card-title">AI / ML</h3>
+          <ul class="skill-bars">
+            <li><span class="skill-name">Python Basics</span><span class="bar"><span class="bar-fill" style="--val:65%"></span></span></li>
+            <li><span class="skill-name">ML Concepts</span><span class="bar"><span class="bar-fill" style="--val:55%"></span></span></li>
+            <li><span class="skill-name">Prompt Engineering</span><span class="bar"><span class="bar-fill" style="--val:75%"></span></span></li>
+            <li><span class="skill-name">AI Tools</span><span class="bar"><span class="bar-fill" style="--val:72%"></span></span></li>
+          </ul>
+        </article>
+
+        <article class="skill-card" data-reveal tabindex="0">
+          <h3 class="skill-card-title">Editing</h3>
+          <ul class="skill-bars">
+            <li><span class="skill-name">Video Editing</span><span class="bar"><span class="bar-fill" style="--val:75%"></span></span></li>
+            <li><span class="skill-name">Photo Editing</span><span class="bar"><span class="bar-fill" style="--val:78%"></span></span></li>
+            <li><span class="skill-name">Adobe Tools</span><span class="bar"><span class="bar-fill" style="--val:68%"></span></span></li>
+            <li><span class="skill-name">Canva</span><span class="bar"><span class="bar-fill" style="--val:85%"></span></span></li>
+          </ul>
+        </article>
+
+        <article class="skill-card" data-reveal tabindex="0">
+          <h3 class="skill-card-title">Driving</h3>
+          <ul class="skill-bars">
+            <li><span class="skill-name">Driving Skills</span><span class="bar"><span class="bar-fill" style="--val:80%"></span></span></li>
+            <li><span class="skill-name">License Ready</span><span class="bar"><span class="bar-fill" style="--val:60%"></span></span></li>
+          </ul>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section id="projects" class="section" aria-labelledby="projects-title">
+    <div class="container">
+      <p class="eyebrow" data-reveal>Projects</p>
+      <h2 id="projects-title" class="section-title" data-reveal>A few things I've built</h2>
+      <p class="section-sub" data-reveal>Demo entries — swap these for your real case studies.</p>
+
+      <div class="projects-grid">
+
+        <article class="project-card" data-reveal tabindex="0">
+          <div class="project-thumb" style="--g1:#5B8DEF;--g2:#6DD3CE;" aria-hidden="true">
+            <span class="project-thumb-tag">01</span>
+          </div>
+          <h3 class="project-title">Portfolio Landing Kit</h3>
+          <p class="project-desc">A reusable landing page system with modular sections and a dark gradient theme.</p>
+          <ul class="project-stack">
+            <li>HTML</li><li>CSS</li><li>JavaScript</li>
+          </ul>
+          <div class="project-links">
+            <a href="#" class="link-btn">GitHub</a>
+            <a href="#" class="link-btn link-btn-primary">Live Demo</a>
+          </div>
+        </article>
+
+        <article class="project-card" data-reveal tabindex="0">
+          <div class="project-thumb" style="--g1:#6DD3CE;--g2:#B8E1FF;" aria-hidden="true">
+            <span class="project-thumb-tag">02</span>
+          </div>
+          <h3 class="project-title">Task Flow App UI</h3>
+          <p class="project-desc">A UI/UX case study for a task manager, from wireframes to a clickable prototype.</p>
+          <ul class="project-stack">
+            <li>Figma</li><li>Prototyping</li>
+          </ul>
+          <div class="project-links">
+            <a href="#" class="link-btn">GitHub</a>
+            <a href="#" class="link-btn link-btn-primary">Live Demo</a>
+          </div>
+        </article>
+
+        <article class="project-card" data-reveal tabindex="0">
+          <div class="project-thumb" style="--g1:#B8E1FF;--g2:#5B8DEF;" aria-hidden="true">
+            <span class="project-thumb-tag">03</span>
+          </div>
+          <h3 class="project-title">Restaurant Website</h3>
+          <p class="project-desc">A responsive multi-page site with an online menu and reservation form.</p>
+          <ul class="project-stack">
+            <li>HTML</li><li>CSS</li><li>JS</li>
+          </ul>
+          <div class="project-links">
+            <a href="#" class="link-btn">GitHub</a>
+            <a href="#" class="link-btn link-btn-primary">Live Demo</a>
+          </div>
+        </article>
+
+        <article class="project-card" data-reveal tabindex="0">
+          <div class="project-thumb" style="--g1:#74C69D;--g2:#5B8DEF;" aria-hidden="true">
+            <span class="project-thumb-tag">04</span>
+          </div>
+          <h3 class="project-title">ML Prediction Notebook</h3>
+          <p class="project-desc">A beginner machine learning project predicting outcomes from a small dataset.</p>
+          <ul class="project-stack">
+            <li>Python</li><li>ML Basics</li>
+          </ul>
+          <div class="project-links">
+            <a href="#" class="link-btn">GitHub</a>
+            <a href="#" class="link-btn link-btn-primary">Live Demo</a>
+          </div>
+        </article>
+
+        <article class="project-card" data-reveal tabindex="0">
+          <div class="project-thumb" style="--g1:#5B8DEF;--g2:#B8E1FF;" aria-hidden="true">
+            <span class="project-thumb-tag">05</span>
+          </div>
+          <h3 class="project-title">Brand Reel Edit</h3>
+          <p class="project-desc">A short-form promotional video edited for pacing, color grading and captions.</p>
+          <ul class="project-stack">
+            <li>Video Editing</li><li>Adobe</li>
+          </ul>
+          <div class="project-links">
+            <a href="#" class="link-btn">GitHub</a>
+            <a href="#" class="link-btn link-btn-primary">Live Demo</a>
+          </div>
+        </article>
+
+        <article class="project-card" data-reveal tabindex="0">
+          <div class="project-thumb" style="--g1:#6DD3CE;--g2:#74C69D;" aria-hidden="true">
+            <span class="project-thumb-tag">06</span>
+          </div>
+          <h3 class="project-title">Personal Finance Tracker</h3>
+          <p class="project-desc">A lightweight web app concept for logging expenses and visualizing spending.</p>
+          <ul class="project-stack">
+            <li>HTML</li><li>CSS</li><li>JavaScript</li>
+          </ul>
+          <div class="project-links">
+            <a href="#" class="link-btn">GitHub</a>
+            <a href="#" class="link-btn link-btn-primary">Live Demo</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CERTIFICATES ============ -->
+  <section id="certificates" class="section" aria-labelledby="cert-title">
+    <div class="container">
+      <p class="eyebrow" data-reveal>Certificates</p>
+      <h2 id="cert-title" class="section-title" data-reveal>Learning, documented</h2>
+
+      <ol class="timeline">
+        <li class="timeline-item" data-reveal>
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-year">2025</span>
+            <h3 class="timeline-title">UI/UX Design Fundamentals</h3>
+            <p class="timeline-org">Google / Coursera</p>
+            <a href="#" class="link-btn">View</a>
+          </div>
+        </li>
+        <li class="timeline-item" data-reveal>
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-year">2025</span>
+            <h3 class="timeline-title">Responsive Web Design</h3>
+            <p class="timeline-org">freeCodeCamp</p>
+            <a href="#" class="link-btn">View</a>
+          </div>
+        </li>
+        <li class="timeline-item" data-reveal>
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-year">2024</span>
+            <h3 class="timeline-title">Introduction to Machine Learning</h3>
+            <p class="timeline-org">Kaggle Learn</p>
+            <a href="#" class="link-btn">View</a>
+          </div>
+        </li>
+        <li class="timeline-item" data-reveal>
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-year">2024</span>
+            <h3 class="timeline-title">Prompt Engineering Basics</h3>
+            <p class="timeline-org">DeepLearning.AI</p>
+            <a href="#" class="link-btn">View</a>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ EDUCATION ============ -->
+  <section id="education" class="section" aria-labelledby="edu-title">
+    <div class="container">
+      <p class="eyebrow" data-reveal>Education</p>
+      <h2 id="edu-title" class="section-title" data-reveal>My academic path</h2>
+
+      <ol class="timeline">
+        <li class="timeline-item" data-reveal>
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-year">Completed</span>
+            <h3 class="timeline-title">FSc in ICS</h3>
+            <p class="timeline-org">Pre-medical / Computer Science foundation</p>
+          </div>
+        </li>
+        <li class="timeline-item" data-reveal>
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-year">In progress</span>
+            <h3 class="timeline-title">DIT — Diploma in Information Technology</h3>
+            <p class="timeline-org">Building core web &amp; software fundamentals</p>
+          </div>
+        </li>
+        <li class="timeline-item" data-reveal>
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-year">Next</span>
+            <h3 class="timeline-title">Future Learning</h3>
+            <p class="timeline-org">Deepening AI/ML and advanced front-end skills</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ EXPERIENCE ============ -->
+  <section id="experience" class="section" aria-labelledby="exp-title">
+    <div class="container">
+      <p class="eyebrow" data-reveal>Experience</p>
+      <h2 id="exp-title" class="section-title" data-reveal>Where I stand right now</h2>
+
+      <div class="status-grid">
+        <div class="status-card" data-reveal>
+          <span class="status-dot" aria-hidden="true"></span>
+          <h3>Open for Internship</h3>
+          <p>Looking for a hands-on role in web development or UI/UX design.</p>
+        </div>
+        <div class="status-card" data-reveal>
+          <span class="status-dot" aria-hidden="true"></span>
+          <h3>Available for Freelance</h3>
+          <p>Taking on small websites, landing pages and design projects.</p>
+        </div>
+        <div class="status-card" data-reveal>
+          <span class="status-dot" aria-hidden="true"></span>
+          <h3>Learning AI</h3>
+          <p>Actively studying machine learning and applied AI tools.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section id="contact" class="section" aria-labelledby="contact-title">
+    <div class="container">
+      <p class="eyebrow" data-reveal>Contact</p>
+      <h2 id="contact-title" class="section-title" data-reveal>Let's work together</h2>
+      <p class="section-sub" data-reveal>Have a project in mind, or just want to say hello? Send a message.</p>
+
+      <div class="contact-grid">
+
+        <form class="contact-form glass-card" data-reveal novalidate>
+          <div class="field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" autocomplete="email" required>
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+          <p class="form-note" id="formNote" role="status" aria-live="polite"></p>
+        </form>
+
+        <div class="contact-info glass-card" data-reveal>
+          <a class="contact-row" href="tel:+923180736775">
+            <span class="contact-icon" aria-hidden="true">📞</span>
+            <span>
+              <span class="contact-label">Phone</span>
+              <span class="contact-value">0318 0736775</span>
+            </span>
+          </a>
+          <a class="contact-row" href="https://wa.me/923180736775" target="_blank" rel="noopener">
+            <span class="contact-icon" aria-hidden="true">💬</span>
+            <span>
+              <span class="contact-label">WhatsApp</span>
+              <span class="contact-value">Chat on WhatsApp</span>
+            </span>
+          </a>
+          <a class="contact-row" href="https://instagram.com/haider123" target="_blank" rel="noopener">
+            <span class="contact-icon" aria-hidden="true">📷</span>
+            <span>
+              <span class="contact-label">Instagram</span>
+              <span class="contact-value">@haider123</span>
+            </span>
+          </a>
+          <div class="contact-row">
+            <span class="contact-icon" aria-hidden="true">📍</span>
+            <span>
+              <span class="contact-label">Location</span>
+              <span class="contact-value">KP, Khanpur</span>
+            </span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container footer-grid">
+    <a href="#home" class="nav-logo">HA</a>
+
+    <ul class="footer-social" aria-label="Social links">
+      <li><a href="https://instagram.com/haider123" target="_blank" rel="noopener" aria-label="Instagram">IG</a></li>
+      <li><a href="https://wa.me/923180736775" target="_blank" rel="noopener" aria-label="WhatsApp">WA</a></li>
+      <li><a href="tel:+923180736775" aria-label="Phone">Call</a></li>
+    </ul>
+
+    <p class="footer-copy">© <span id="year"></span> Haider Ali. All rights reserved.</p>
+  </div>
+</footer>
+
+<button id="backToTop" class="back-to-top" aria-label="Back to top">↑</button>
+
+<!-- Scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lenis/1.1.13/lenis.min.js"></script>
+
+<script src="js/particles.js"></script>
+<script src="js/animation.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
